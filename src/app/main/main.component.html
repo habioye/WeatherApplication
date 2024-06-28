@@ -1,0 +1,15 @@
+<form class="todo-form" #f="ngForm" (ngSubmit)="search(f)">
+    <div class="row">
+      <div class="input-field col s9">
+        <label for="title">Enter City</label>
+        <input type="text" name="title" id="title" placeholder="Enter a city" ngModel>
+        
+      </div>
+
+      <div class="input-field col s3">
+        <button type="submit" class="btn waves-effect waves-light blue"><i class="material-icons inline-icon">Search City</i></button>
+      </div>
+    </div>
+  </form>
+<p>{{inputValue}}</p>
+
